@@ -8,20 +8,12 @@ section(class="canvas front" id="front")
 
             p Livestream from Gabri <br><br> stay safe, stay home, stay dancing
 
-            div(id="twitch-embed")
-            div
-                    <!-- Load the Twitch embed script -->
-                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-                    <script type="text/javascript">
-                    new Twitch.Embed("twitch-embed", {
-                        width: 854,
-                        height: 480,
-                        channel: "flumperfern",
-                        // only needed if your site is also embedded on embed.example.com and othersite.example.com
-                        parent: ["bobshirley.xyz"]
-                    });
-                    </script>
+            <iframe src="https://player.twitch.tv/?flumperfern&parent=streamernews.example.com"
+                height="<height>"
+                width="<width>"
+                frameborder="<frameborder>"
+                scrolling="<scrolling>"
+                allowfullscreen="<allowfullscreen>">
+            </iframe>
 
             a(href="mailto:bobshirleysays@gmail.com") bobshirleysays@gmail.com
